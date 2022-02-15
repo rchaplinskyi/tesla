@@ -1,0 +1,176 @@
+body {
+	margin: 0;
+	padding: 0;
+	color: #000;
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+}
+div, p {
+	box-sizing: border-box;
+}
+ul, li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+.active {
+	color: #FF0000;
+}
+.container {
+	margin-left: 105px;
+	margin-right: 105px;
+}
+/*Секція навігації*/
+header.header {
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+header.header .container nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+header.header .container nav ul.main_menu {
+	display: flex;
+}
+header.header .container nav ul.main_menu li {
+	margin-left: 16px;
+	margin-right: 16px;
+	text-transform: uppercase;
+}
+header.header .container nav ul.main_menu li a:hover {
+	color: #FF0000;
+	transition: all .3s ease-in-out;
+}
+header.header .container nav .option_menu ul {
+	display: flex;
+}
+header.header .container nav .option_menu ul li {
+	margin-left: 16px;
+	margin-right: 16px;
+	text-transform: uppercase;
+}
+header.header .container nav .option_menu ul li a:hover {
+	color: #FF0000;
+	transition: all .3s ease-in-out;
+}
+header.header .container nav .option_menu .burger_menu {
+	margin-left: 79px;
+}
+
+/*Секція продажу Tesla*/ 
+section.sales .container .content {
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: center;
+}
+section.sales .container .content .left_part,
+section.sales .container .content .right_part {
+	width: 50%;
+}
+section.sales .container .content .left_part .offer h1 {
+	font-size: 50px;
+	font-weight: 700;
+}
+section.sales .container .content .left_part .offer h1 span {
+	color: #EA1010;
+}
+section.sales .container .content .left_part .offer p {
+	font-size: 22px;
+	color: #7A6F6F;
+	width: 483px;
+}
+section.sales .container .content .left_part .btn {
+	display: block;
+	margin-top: 50px;
+	width: 220px;
+	border: 1px solid #000;
+	border-radius: 50px;
+	color: #000;
+	font-weight: 700;
+	text-align: center;
+	padding: 16px 0;
+	transition: all 0.3 ease;
+}
+section.sales .container .content .left_part .btn:hover {
+	background: #2B2A2A;
+	color: #fff;
+	box-shadow: 3px 3px 14px #000000;
+	border: none;
+	transition: all 0.3 ease;
+}
+section.sales .container .content .right_part .tesla_slider .slider_item img {
+	width: 100%;
+}
+section.sales .container .content .right_part .slider_dots .slick-dots {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+section.sales .container .content .right_part .slider_dots .slick-dots li {
+	margin: 0 0.25rem;
+}
+section.sales .container .content .right_part .slider_dots .slick-dots button {
+	display: block;
+	width: 6px;
+	height: 6px;
+	padding: 0;
+	border: none;
+	border-radius: 100%;
+	background-color: #C4C4C4;
+	text-indent: -9999px;
+}
+section.sales .container .content .right_part .slider_dots .slick-dots li.slick-active button {
+	background-color: #000;
+}
+	
+/*Секція додаткової інформації*/
+.more_info {
+	display: flex;
+	align-items: center;
+	margin-top: 90px;
+	margin-bottom: 90px;
+}
+.more_info .social_info ul {
+	display: flex;
+	padding: 0;
+}
+.more_info .social_info ul li {
+	padding-right: 50px;
+}
+.more_info .social_info ul li:last-child{
+	padding-right: 0;
+}
+.more_info .social_info ul li a i:hover {
+	color: #EA1010;
+	transition: all 0.3 ease;
+}
+.more_info .tech_info {
+	display: flex;
+	margin-left: auto;
+	
+}
+.more_info .tech_info .tech_item {
+	padding-right: 100px;
+}
+.more_info .tech_info .tech_item:last-child {
+	padding-right: 0;
+}
+
+@media screen and (max-width:1044px) {
+	.more_info .tech_info .tech_item {
+		padding-right: 45px;
+	}
+	.header.header .container nav ul.main_menu {
+		font-size: 14px;
+	}	
+	.section.sales .container .content .left_part .btn {
+		font-size: 14px;
+	}
+}
