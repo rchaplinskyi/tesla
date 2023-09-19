@@ -46,6 +46,7 @@ header.header .container nav ul.main_menu li {
 }
 header.header .container nav ul.main_menu li a:hover {
 	color: #FF0000;
+	text-decoration: underline;
 	transition: all .3s ease-in-out;
 }
 header.header .container nav .option_menu ul {
